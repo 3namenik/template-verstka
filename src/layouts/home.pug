@@ -1,0 +1,147 @@
+link(rel="stylesheet" href="/local/css/home.css")
+
+link(rel="stylesheet" href="/local/libs/swiper/swiper-bundle.min.css" )
+script(src="/local/libs/swiper/swiper-bundle.min.js" defer)
+
+include ../assets/home-slider/home-slider
+
+.max-width
+    .home-service
+        h1.home-service__title
+            | Центр Новой Медицины "Здоровье"
+        .quotes.home-service__quotes
+            | задача организации, в особенности же понимание сути ресурсосберегающих технологий, а также свежий взгляд на привычные вещи - безусловно открывает
+        nav.home-service__services
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+            .home-service-item
+                a.home-service-item__link(href="#")
+                    | Гомеопатия
+        .home-service__blocks
+            a.home-service-block.home-service-block_1(href="#")
+                .home-service-block__title
+                    | Наша аптека
+            a.home-service-block.home-service-block_2(href="#")
+                .home-service-block__title
+                    | Онлайн консультация
+            a.home-service-block.home-service-block_3(href="#")
+                .home-service-block__title
+                    | Детское отделение
+
+.home-about
+    .max-width
+        .home-about__container
+            .home-about__img
+                picture
+                    source(srcset="/local/img/home-about.webp" type="image/webp")
+                    img(srcset="/local/img/home-about.jpg" alt="" width="" height="")
+            h2.home-about__title
+                | О клинике
+            .quotes.home-about__quotes
+                | работаем с 2000 года
+            .home-about__desc
+                p 
+                    | Как принято считать, действия представителей оппозиции рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. Но выбранный нами инновационный путь однозначно определяет каждого участника как способного принимать собственные решения касаемо переосмысления внешнеэкономических политик.
+                p
+                    | Значимость этих проблем настолько очевидна, что высокое качество позиционных исследований, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для благоприятных перспектив. А ещё многие известные личности являются только методом политического участия и объединены в целые кластеры себе подобных.
+                .home-about__desc-show-all
+                    a.home-about__desc-show-all__link(href="#")
+                        | Больше о клинике
+
+.max-width
+    .home-specialists
+        include ../assets/specialists/specialists
+.why
+    .max-width
+        .why__container
+            h2.why__title
+                | Почему клиенты выбирают нас
+            .quotes.quotes_why
+                | многопрофильный перечень медицинских услуг - это возможность пройти все этапы диагностики и лечения в одном месте 
+            .why__img
+                picture
+                    source(srcset="/local/img/why.webp" type="image/webp")
+                    img(srcset="/local/img/why.jpg" alt="" width="" height="")
+            .why-item.why-item_1
+                .why-item__img
+                    img(src="/local/img/icon-why-item.svg", alt="" width="50" height="50")
+                .why-item__title
+                    | Безоперационное лечение
+                .why-item__content 
+                    ul
+                        li
+                            | Грыжи межпозвоночных дисков
+                        li
+                            | Желчекаменная болезнь, мочекаменная болезнь
+                        li
+                            | Миомы, эндометриоз, кисты, полипы и прочее
+            .why-item.why-item_2
+                .why-item__img
+                    img(src="/local/img/icon-why-item.svg", alt="" width="50" height="50")
+                .why-item__title
+                    | Опыт врачей
+                .why-item__content 
+                    | Врачи с опытом от 10 лет. Клиника работает с 2000 года.
+            .why-item.why-item_3
+                .why-item__img
+                    img(src="/local/img/icon-why-item.svg", alt="" width="50" height="50")
+                .why-item__title
+                    | Всё в одном месте
+                .why-item__content 
+                    | Все специалисты в одном месте.
+.max-width
+    .home-blocks
+        //- //TODO Доделать адаптив
+        .home-blocks-item
+            h2.home-blocks-item__title
+                | Статьи
+            a.home-blocks-item__link(href="#")
+                | Все статьи
+            .home-blocks-item__content
+                include ../assets/articles-list/articles-list
+        .home-blocks-item
+            h2.home-blocks-item__title
+                | Отзывы клиентов
+            a.home-blocks-item__link(href="#")
+                | Все отзывы
+            .home-blocks-item__content
+                include ../assets/reviews-list/reviews-list
+
+include ../assets/bottom-form/bottom-form
