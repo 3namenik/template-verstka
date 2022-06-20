@@ -89,8 +89,8 @@ function rush(done){
 	});	
 
 	gulp.watch([
-		'./src/local/img/**/*.jpg',
-		'./src/local/img/**/*.png'
+		'src/local/img/**/*.jpg',
+		'src/local/img/**/*.png'
 	], create_webp);
 
 }
