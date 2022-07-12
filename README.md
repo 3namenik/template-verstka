@@ -18,11 +18,17 @@ profit!
 # Структура файлов:
 
 src - источник
+
 dist - результат
 
 assets - компоненты
+
 local - для локальных файлов js/img/fonts/css и другие
-layouts - шаблоны страниц (без <head>)
-templates - шаблоны страниц (с <head>)
+
+layouts - шаблоны страниц (без <head> и <footer>)
+
+templates - шаблоны страниц (с <head> и <footer>)
+
 index.pug - входная точка
+
 home.pug - пример главной страницы
