@@ -25,9 +25,9 @@ assets - компоненты
 
 local - для локальных файлов js/img/fonts/css и другие
 
-layouts - шаблоны страниц (без <head> и <footer>)
+layouts - шаблоны страниц (без < head> и < footer>)
 
-templates - шаблоны страниц (с <head> и <footer>)
+templates - шаблоны страниц (с < head> и < footer>)
 
 index.pug - входная точка
 
