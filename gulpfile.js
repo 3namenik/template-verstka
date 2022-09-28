@@ -158,6 +158,7 @@ function uncss(done){
 exports.spriteSvg = spriteSvg;
 exports.create_webp = create_webp;
 exports.fonts = fonts;
+exports.libs = libs;
 exports.img = img;
 
 exports.default = gulp.series(hello, rush);
