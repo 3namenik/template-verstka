@@ -3,4 +3,35 @@ link(rel="stylesheet", href="/assets/footer/footer.css")
 script(async src="/assets/footer/footer.js")
 
 footer.footer
+
+div(style="height: 500px")
     
+#modal-callback.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+  .modal-dialog.modal-dialog-centered
+    form#form-content.modal-content(action="#")
+      button.modal-content__close(data-bs-dismiss="modal")
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 20" fill="none">
+          <path d="M1 1L19 19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 1L0.999969 19" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      .modal-content__title
+        | Обратный звонок
+      .modal-content__desc
+        | Заполните форму и мы свяжемся с вами
+      label.input.input_name
+        input(type="text" required name="user-name" placeholder="Ваше имя")
+      label.input.input_phone
+        input(type="text" required name="phone" placeholder="Ваш телефон")
+      button.btn(type="submit" title="Отправить")
+        | Отправить
+      .form__privacy
+        | Нажимая на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь c <a href="#">Политикой конфиденциальности</a>
+
+      
+#modal-succes.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+
+#modal-error.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
