@@ -1,0 +1,55 @@
+<!-- home-slider -->
+link(rel="stylesheet", href="/assets/home-slider/home-slider.css")
+script(async src="/assets/home-slider/home-slider.js" type="module")
+
+link(rel="stylesheet" href="/local/libs/swiper/swiper-bundle.min.css" )
+script(src="/local/libs/swiper/swiper-bundle.min.js" defer)
+.home-slider
+    #home-slider.swiper
+        .swiper-wrapper
+            .swiper-slide
+                .home-slider__slide
+                    .home-slider__slide-img
+                        picture
+                            source(srcset="/local/img/home-slide-1.webp" type="image/webp")
+                            source(srcset="/local/img/home-slide-1.jpg" type="image/jpg")
+                            img(src="/local/img/home-slide-1.jpg" type="image/jpg" alt="")
+                    .home-slider__slide-cont
+                        .home-slider__slide-title
+                            | Гарантируем лучшую цену
+                        .home-slider__slide-desc
+                            | Нашли инструмент дешевле? Сделаем скидку!
+                        .home-slider__slide-btn-cont
+                            a.btn.btn_green.home-slider__slide-btn(href="#")
+                                | Подробнее
+            .swiper-slide
+                .home-slider__slide
+                    .home-slider__slide-img
+                        picture
+                            source(srcset="/local/img/home-slide-1.webp" type="image/webp")
+                            source(srcset="/local/img/home-slide-1.jpg" type="image/jpg")
+                            img(src="/local/img/home-slide-1.jpg" type="image/jpg" alt="")
+                    .home-slider__slide-cont
+                        .home-slider__slide-title
+                            | Гарантируем лучшую цену
+                        .home-slider__slide-desc
+                            | Нашли инструмент дешевле? Сделаем скидку!
+                        .home-slider__slide-btn-cont
+                            a.btn.btn_green.home-slider__slide-btn(href="#")
+                                | Подробнее
+            .swiper-slide
+                .home-slider__slide
+                    .home-slider__slide-img
+                        picture
+                            source(srcset="/local/img/home-slide-1.webp" type="image/webp")
+                            source(srcset="/local/img/home-slide-1.jpg" type="image/jpg")
+                            img(src="/local/img/home-slide-1.jpg" type="image/jpg" alt="")
+                    .home-slider__slide-cont
+                        .home-slider__slide-title
+                            | Гарантируем лучшую цену
+                        .home-slider__slide-desc
+                            | Нашли инструмент дешевле? Сделаем скидку!
+                        .home-slider__slide-btn-cont
+                            a.btn.btn_green.home-slider__slide-btn(href="#")
+                                | Подробнее
+        .home-slider__dots.swiper-pagination

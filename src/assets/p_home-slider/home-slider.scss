@@ -1,0 +1,121 @@
+.home-slider{
+    margin-bottom: 60px;
+    @media (max-width: 575px){
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .swiper-pagination.home-slider__dots {
+        position: absolute;
+        bottom: 22px;
+        right: 19px;
+        justify-content: flex-end;
+        left: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        gap: 6px;
+
+        @media (max-width: 575px){
+            position: static;
+            margin: 15px auto 0;
+        }
+
+        .swiper-pagination-bullet {
+            margin: 0;
+            background-color: white;
+            opacity: 1;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            transition: width .2s ease;
+            @media (max-width: 575px) {
+                background-color: #336E75;
+            }
+            &.swiper-pagination-bullet-active {
+                width: 17px;
+            }
+        }
+    }
+}
+
+.home-slider__slide{
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    @media (min-width: 576px) {
+        border-radius: 4px;
+    }
+
+    @media (max-width: 991px){
+        padding: 30px;
+    }
+
+    @media (max-width: 400px) {
+        padding: 15px;
+    }
+}
+
+.home-slider__slide-cont{
+    max-width: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (max-width: 575px) {
+        max-width: 250px;
+    }
+}
+
+.home-slider__slide-desc{
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+    
+    @media (max-width: 575px) {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+
+.home-slider__slide-title{
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 130%;
+    color: #FFFFFF;
+
+    @media (max-width: 575px){
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+}
+
+.home-slider__slide-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.btn.home-slider__slide-btn{
+    @media (max-width: 575px){
+        padding: 8px 15px;
+    }
+}

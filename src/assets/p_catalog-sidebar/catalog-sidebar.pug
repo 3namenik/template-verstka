@@ -1,0 +1,34 @@
+<!-- catalog-sidebar -->
+link(rel="stylesheet", href="/assets/catalog-sidebar/catalog-sidebar.css")
+//- script(async src="/assets/catalog-sidebar/catalog-sidebar.js")
+
+nav.catalog-sidebar
+    button.catalog-sidebar__title(title="Каталог" data-bs-toggle="collapse" data-bs-target="#catalog-sidebar")
+        .catalog-sidebar__title-link
+            | Каталог
+        .catalog-sidebar__arrow
+            <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                <path d="M1 1L3.172 3.896C3.53482 4.37976 3.71623 4.62164 3.7447 4.89722C3.75177 4.96556 3.75177 5.03444 3.7447 5.10278C3.71623 5.37836 3.53482 5.62024 3.172 6.104L1 9" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+    #catalog-sidebar.collapse.catalog-sidebar.show
+        .catalog-sidebar__item
+            a.catalog-sidebar__item-link(href="#")
+                | Электроинструменты
+            button.catalog-sidebar__arrow.collapsed(title="Электроинструменты" data-bs-toggle="collapse" data-bs-target="#catalog-sidebar__1")
+                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="10" viewBox="0 0 5 10" fill="none">
+                    <path d="M1 1L3.172 3.896C3.53482 4.37976 3.71623 4.62164 3.7447 4.89722C3.75177 4.96556 3.75177 5.03444 3.7447 5.10278C3.71623 5.37836 3.53482 5.62024 3.172 6.104L1 9" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+        #catalog-sidebar__1.collapse
+            .catalog-sidebar__child
+                .catalog-sidebar__item-2
+                    a.catalog-sidebar__item-2-link(href="#")
+                        | Набор инструментов
+                .catalog-sidebar__item-2
+                    a.catalog-sidebar__item-2-link(href="#")
+                        | Дрели-шуруповерты
+                .catalog-sidebar__item-2
+                    a.catalog-sidebar__item-2-link(href="#")
+                        | УШМ (Болгарки)
+        .catalog-sidebar__item
+            a.catalog-sidebar__item-link(href="#")
+                | Электроинструменты

@@ -1,0 +1,46 @@
+.slider{
+    position: relative;
+    .swiper{
+        margin: -10px 0;
+    }
+
+    .swiper-wrapper{
+        padding: 10px 0;   
+    }
+
+    .swiper-slide{
+        width: 272px;
+        @media (max-width: 575px){
+            width: 190px;
+        }
+    }
+}
+
+.slider__buttons{
+    
+    @media (max-width: 1399px){
+        position: static;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 20px;
+    }
+
+    .swiper-button-prev {
+        @media (min-width: 1400px) {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateX(-50%);
+        }
+    }
+
+    .swiper-button-next {
+        @media (min-width: 1400px) {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateX(50%);
+        }
+    }
+}

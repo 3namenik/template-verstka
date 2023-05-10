@@ -1,0 +1,31 @@
+<!-- slider -->
+link(rel="stylesheet", href="/assets/slider/slider.css")
+script(async src="/assets/slider/slider.js")
+
+link(rel="stylesheet" href="/local/libs/swiper/swiper-bundle.min.css" )
+script(src="/local/libs/swiper/swiper-bundle.min.js" defer)
+
+.slider
+    .swiper
+        .swiper-wrapper
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+    .slider__buttons
+        button.swiper-button-prev(title="Предыдущий слайд")
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18" fill="none">
+                <path d="M8 0.75L2.27639 7.42754C1.83093 7.94725 1.6082 8.2071 1.5735 8.51186C1.56494 8.58705 1.56494 8.66296 1.5735 8.73814C1.6082 9.0429 1.83093 9.30275 2.27639 9.82246L8 16.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        button.swiper-button-next(title="Предыдущий слайд")
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18" fill="none">
+                <path d="M1 0.75L6.72361 7.42754C7.16907 7.94725 7.3918 8.2071 7.4265 8.51186C7.43506 8.58705 7.43506 8.66296 7.4265 8.73814C7.3918 9.0429 7.16907 9.30275 6.72361 9.82246L1 16.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>

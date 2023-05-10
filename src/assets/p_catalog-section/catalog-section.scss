@@ -1,0 +1,16 @@
+.catalog-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 1290px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 750px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 359px) {
+        grid-template-columns: 1fr;
+    }
+}
