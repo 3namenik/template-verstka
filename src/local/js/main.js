@@ -27,7 +27,8 @@ document.addEventListener('DOMContentLoaded', evt => {
                 }).replace(/[+()]/g, "\\$&");
             reg = new RegExp("^" + reg + "$");
             if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
-            if (event.type == "blur" && this.value.length < 5)  this.value = ""
+            if (event.type == "blur" && this.value.length < 5)  this.value = "";
+            this.selectionStart = this.value.length;
         }
 
         input.addEventListener("input", mask, false);
