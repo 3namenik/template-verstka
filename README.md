@@ -25,7 +25,7 @@ assets - компоненты
 
 local - для локальных файлов js/img/fonts/css и другие
 
-layouts - шаблоны страниц (без < head> и < footer>)
+pages - шаблоны страниц (без < head> и < footer>)
 
 templates - шаблоны страниц (с < head> и < footer>)
 
