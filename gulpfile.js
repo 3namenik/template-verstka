@@ -62,13 +62,12 @@ function rush(done){
 		online: true
 	});	
 
-	//работает
 	gulp.watch('src/**/*.scss', sass_to_css);
 	gulp.watch('src/**/*.js', scripts);
 	gulp.watch('src/local/libs/**/*', libs);
 	gulp.watch('src/local/fonts/**/*', fonts);
 	gulp.watch('./src/local/img/**/*', img);
-	gulp.watch('src/local/img/sprite-svg/*.svg', spriteSvg);
+	//gulp.watch('src/local/img/sprite-svg/*.svg', spriteSvg);
 
 	gulp.watch('./src/**/*.html').on('change', () => {
 		return gulp.src([
